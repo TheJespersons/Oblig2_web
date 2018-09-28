@@ -1,0 +1,160 @@
+/*Bakgrunnsbilde og midtstilling*/
+body {
+    background-image: url("../bilder/by.jpg");
+    background-size: cover;
+    max-width: 80%;
+    margin: auto;
+}
+
+/*Grid og navngivning av elementer*/
+#hovedramme-forside {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "section section aside"
+        "footer footer footer"
+}
+
+/*Header*/
+header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: darkcyan;
+    margin-top: 5px;
+}
+
+/* Hovedoverskriften sitt desing*/
+header h1 {
+    text-align: center;
+    color: white;
+}
+
+/*NavigasjonsMeny */
+nav {
+    grid-area: nav;
+    display: grid; 
+}
+
+/*Listens posisjon og stil*/
+nav ul{
+    position: relative;
+    list-style: none;
+    text-align: center;
+    background-color: darkcyan;
+    padding: 6px;
+    margin: 0;
+    border-style: ridge;
+}
+
+
+nav ul li {
+    display: inline-block;
+    text-align: center;
+    padding-left: 30px;
+}
+
+/*Tekstdesign i menyen*/
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-family: oswald;
+    letter-spacing: 1px;
+}
+
+/*En hover funksjon som endrer fargen rundt a*/
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+a:hover{
+    color: black;
+}
+
+/*Ramme til grid artikklene*/
+section {
+    grid-area: section;
+    display: grid;
+    max-width: 100%;
+    grid-gap: 10px;
+    grid-template-columns: auto auto;
+    background-color: lightblue;
+    padding: 10px;
+    border-style: ridge;
+}
+
+/*Underrammer, artikkler*/ 
+.artikkel-oppsett {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid darkcyan;
+    border-radius: 12px;
+    padding: 5px;
+    font-size: 15px;
+    margin: 2px;
+    
+}
+
+/*Sideelement*/
+aside {
+    grid-area: aside;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "pAside"
+    "pAside"
+    "pAside"
+    grid-gap: 10px;
+    max-width: 100%;
+    border-style: ridge;
+    border-color: darkcyan;
+}
+
+.pAside {
+    border-top: 1px solid black;
+    margin-top: 0;
+}
+
+#youtubeVideo {
+    grid-area: pAside;
+    display: grid;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+#githubLesMer {
+    background-color:rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: oswald;
+}
+
+article img {
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+/*Footer*/
+footer {
+    grid-area: footer;
+    display: grid;
+}
+
+#pFooter {
+    font-style: italic;
+}
+/*Høyre justerer eposten*/
+#e-post { 
+    float: right;
+}

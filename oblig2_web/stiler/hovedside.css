@@ -1,0 +1,111 @@
+/*Bakgrunnsbilde*/
+body {
+    background-image: url("../bilder/by.jpg");
+    background-size: cover;
+    max-width: 80%;
+    margin: auto;
+}
+
+
+
+/*Selve headeren*/
+header {
+    background-color: darkcyan;
+}
+
+/* Hovedoverskriften sitt desing*/
+header h1 {
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+
+/*Listens posisjon og stil*/
+nav ul{
+    position: relative;
+    list-style: none;
+    text-align: center;
+    background-color: darkcyan;
+    padding: 6px;
+    margin: 0;
+    border-style: ridge;
+}
+
+
+nav ul li {
+    display: inline-block;
+    text-align: center;
+    padding-left: 50px;
+}
+
+/*Tekstdesign i menyen*/
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-family: oswald;
+    letter-spacing: 1px;
+    padding: 6px;
+    
+}
+
+/*En hover funksjon som endrer fargen rundt a*/
+nav ul li a:hover {
+    background-color: #320c0c;
+}
+
+a:hover{
+    color:#514cf6;
+}
+
+
+
+/*Grid ramme for artikklene*/
+#sectHovedramme_Grid {
+    max-width: 65%;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: auto auto;
+    background-color: lightblue;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.gridType1 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid black;
+    padding: 5px;
+    font-size: 15px;
+}
+
+#sidekolonne {
+    max-width: 20%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto;
+    background-color:lightblue;
+}
+
+.pAside {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid black;
+    padding: 5px;
+    font-size: 15px;
+}
+
+/*Footer design*/
+#pFooter {
+    font-style: italic;
+}
+
+#e-post { 
+    float: right;
+}
+
+
+ 
+
+
+
+
